@@ -1,0 +1,143 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Share+Tech+Mono&display=swap');
+
+
+:root {
+  --fondo: #0a0f0a;
+  --panel: #0f1a12;
+  --neon: #39ff14;
+  --neon-suave: #7dffb0;
+  --texto: #d9ffe6;
+  --borde: #1f4d2b;
+}
+
+
+body {
+  margin: 0;
+  background-color: var(--fondo);
+  color: var(--texto);
+  font-family: 'Share Tech Mono', monospace;
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif;
+  color: var(--neon);
+  text-shadow: 0 0 8px var(--neon), 0 0 16px rgba(57, 255, 20, 0.5);
+  margin: 0 0 12px;
+}
+
+header {
+  background-color: var(--panel);
+  border-bottom: 2px solid var(--neon);
+  padding: 24px 20px;
+  box-shadow: 0 0 20px rgba(57, 255, 20, 0.25);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  padding: 0;
+  margin: 14px 0 0;
+}
+
+nav a {
+  color: var(--neon-suave);
+  text-decoration: none;
+  border: 1px solid var(--borde);
+  padding: 6px 14px;
+  border-radius: 20px;
+  transition: all 0.2s ease;
+}
+
+nav a:hover {
+  color: #000;
+  background-color: var(--neon);
+  box-shadow: 0 0 12px var(--neon);
+}
+
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+
+#hero {
+  text-align: center;
+  padding: 40px 20px;
+  border: 1px solid var(--borde);
+  border-radius: 10px;
+  background: radial-gradient(circle at center, rgba(57,255,20,0.08), transparent 70%);
+  margin-bottom: 40px;
+}
+
+
+#servicios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+#servicios h2 {
+  width: 100%;
+}
+
+article {
+  flex: 1 1 250px;
+  background-color: var(--panel);
+  border: 1px solid var(--borde);
+  border-radius: 10px;
+  padding: 20px;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+article:hover {
+  box-shadow: 0 0 18px rgba(57, 255, 20, 0.4);
+  transform: translateY(-3px);
+}
+
+
+figure {
+  width: 100%;
+  margin: 20px 0 0;
+  text-align: center;
+}
+
+figure img {
+  max-width: 100%;
+  border-radius: 10px;
+  border: 1px solid var(--neon);
+  box-shadow: 0 0 15px rgba(57, 255, 20, 0.3);
+}
+
+figcaption {
+  font-size: 0.9em;
+  color: var(--neon-suave);
+  margin-top: 8px;
+}
+
+aside {
+  max-width: 900px;
+  margin: 20px auto 40px;
+  padding: 20px;
+  background-color: var(--panel);
+  border-left: 4px solid var(--neon);
+  border-radius: 0 10px 10px 0;
+}
+
+
+footer {
+  background-color: var(--panel);
+  border-top: 2px solid var(--neon);
+  text-align: center;
+  padding: 18px;
+  color: var(--neon-suave);
+}
+
+footer nav {
+  justify-content: center;
+  margin-top: 10px;
+}
